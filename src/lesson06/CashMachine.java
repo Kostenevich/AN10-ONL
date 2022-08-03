@@ -21,42 +21,38 @@ public class CashMachine {
         this.countOfBanknotes100 += countOfBanknotes100;
     }
 
-    public boolean isPossibleToWithdrawMoney(int withdrawCash) {
-        System.out.println("Сумма для выдачи: " + withdrawCash);
+    public boolean isPossibleToWithdrawMoney(int withdrawMoney) {
+        System.out.println("Сумма для выдачи: " + withdrawMoney);
 
-        if ((withdrawCash < 20 || withdrawCash == 30)) {
-            System.out.println("Не имеется нужной суммы для выдачи\n");
+        if (withdrawMoney % 10 != 0) {
             return false;
         }
-        if (withdrawCash % 10 != 0) {
-            System.out.println("Не имеется нужной суммы для выдачи\n");
-            return false;
-        }
-
+        return isPossibleToPrintMoney(withdrawMoney);
+    }
+    public boolean isPossibleToPrintMoney (int withdrawMoney) {
         int countOfBanknotes20toIssuance = countOfBanknotes20;
         int countOfBanknotes50toIssuance = countOfBanknotes50;
         int countOfBanknotes100toIssuance = countOfBanknotes100;
         int checkSum;
 
-        while (withdrawCash > 0) {
-            checkSum = withdrawCash;
-            if (withdrawCash % 20 != 0 && countOfBanknotes50toIssuance > 0) {
-                withdrawCash -= 50;
+        while (withdrawMoney > 0) {
+            checkSum = withdrawMoney;
+            if (withdrawMoney >= 50 && withdrawMoney % 20 != 0 && countOfBanknotes50toIssuance > 0) {
+                withdrawMoney -= 50;
                 countOfBanknotes50toIssuance--;
             }
-            if (withdrawCash >= 100 && countOfBanknotes100toIssuance > 0) {
-                withdrawCash -= 100;
+            if (withdrawMoney >= 100 && countOfBanknotes100toIssuance > 0) {
+                withdrawMoney -= 100;
                 countOfBanknotes100toIssuance--;
             }
-            if (withdrawCash >= 20 && countOfBanknotes20toIssuance > 0) {
-                withdrawCash -= 20;
+            if (withdrawMoney >= 20 && countOfBanknotes20toIssuance > 0) {
+                withdrawMoney -= 20;
                 countOfBanknotes20toIssuance--;
-            } else if (withdrawCash >= 50 && countOfBanknotes50toIssuance > 0 && withdrawCash % 50 == 0) {
-                withdrawCash -= 50;
+            } else if (withdrawMoney >= 50 && countOfBanknotes50toIssuance > 0 && withdrawMoney % 50 == 0) {
+                withdrawMoney -= 50;
                 countOfBanknotes50toIssuance--;
             }
-            if (checkSum == withdrawCash) {
-                System.out.println("Не имеется нужной суммы для выдачи\n");
+            if (checkSum == withdrawMoney) {
                 return false;
             }
         }
