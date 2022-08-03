@@ -22,13 +22,15 @@ public class CashMachine {
     }
 
     public boolean isPossibleToWithdrawMoney(int withdrawMoney) {
-        System.out.println("Сумма для выдачи: " + withdrawMoney);
+        printSumForWithdraw(withdrawMoney);
 
         if (withdrawMoney % 10 != 0) {
+            printErrorMessage();
             return false;
         }
         return isPossibleToPrintMoney(withdrawMoney);
     }
+
     public boolean isPossibleToPrintMoney(int withdrawMoney) {
         int countOfBanknotes20toIssuance = countOfBanknotes20;
         int countOfBanknotes50toIssuance = countOfBanknotes50;
@@ -53,6 +55,7 @@ public class CashMachine {
                 countOfBanknotes50toIssuance--;
             }
             if (checkSum == withdrawMoney) {
+                printErrorMessage();
                 return false;
             }
         }
@@ -64,6 +67,14 @@ public class CashMachine {
         countOfBanknotes100 = countOfBanknotes100toIssuance;
 
         return true;
+    }
+
+    public void printSumForWithdraw(int printSum) {
+        System.out.println("Сумма для выдачи: " + printSum);
+    }
+
+    public void printErrorMessage() {
+        System.out.println("Невозможно выдать такую сумму" + "\n");
     }
 }
 

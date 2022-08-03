@@ -18,7 +18,7 @@ public class MainCashMachine {
         CashMachine cashMachine1 = new CashMachine(6, 1, 1);
         cashMachine1.addMoneyToCashMachine(0, 0, 0);
 
-        cashMachine1.isPossibleToWithdrawMoney(271);
+        cashMachine1.isPossibleToWithdrawMoney(51);
         cashMachine1.isPossibleToWithdrawMoney(10);
         cashMachine1.isPossibleToWithdrawMoney(30);
         cashMachine1.isPossibleToWithdrawMoney(130);
