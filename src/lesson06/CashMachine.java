@@ -29,7 +29,7 @@ public class CashMachine {
         }
         return isPossibleToPrintMoney(withdrawMoney);
     }
-    public boolean isPossibleToPrintMoney (int withdrawMoney) {
+    public boolean isPossibleToPrintMoney(int withdrawMoney) {
         int countOfBanknotes20toIssuance = countOfBanknotes20;
         int countOfBanknotes50toIssuance = countOfBanknotes50;
         int countOfBanknotes100toIssuance = countOfBanknotes100;
