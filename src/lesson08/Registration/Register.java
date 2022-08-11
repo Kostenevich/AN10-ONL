@@ -9,7 +9,7 @@ public class Register implements Show {
 
     public Documents[] addDocumentToRegister(Documents docToAdd) {
         for (int i = 0; i < registers.length; i++) {
-            if (registers[i] != null) {
+            if (registers[i] == null) {
                 registers[i] = docToAdd;
             }
             System.out.println("Документ добавлен");
