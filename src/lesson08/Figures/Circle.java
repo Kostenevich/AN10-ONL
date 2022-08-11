@@ -21,12 +21,12 @@ public class Circle extends Figure implements Countable {
     }
 
     @Override
-    public void countArea () {
+    public void countArea() {
         System.out.println("Площадь " + getName() + " = " + getArea());
     }
 
     @Override
-    public void countPerimeter () {
-        System.out.println("Периметер " + getName() + " = " + getPerimeter()) ;
+    public void countPerimeter() {
+        System.out.println("Периметер " + getName() + " = " + getPerimeter());
     }
 }

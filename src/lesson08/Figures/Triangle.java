@@ -1,6 +1,6 @@
 package lesson08.Figures;
 
-public class Triangle extends Figure implements Countable{
+public class Triangle extends Figure implements Countable {
     private int height;
     private int base;
     private int sideX;
@@ -25,12 +25,12 @@ public class Triangle extends Figure implements Countable{
     }
 
     @Override
-    public void countArea () {
+    public void countArea() {
         System.out.println("Площадь " + getName() + " = " + getArea());
     }
 
     @Override
-    public void countPerimeter () {
-        System.out.println("Периметер " + getName() + " = " + getPerimeter()) ;
+    public void countPerimeter() {
+        System.out.println("Периметер " + getName() + " = " + getPerimeter());
     }
 }

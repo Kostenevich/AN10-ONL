@@ -12,7 +12,7 @@ public class Rectangle extends Figure implements Countable {
 
     @Override
     public double getArea() {
-       return (sideX * sideY);
+        return (sideX * sideY);
     }
 
     @Override
@@ -21,12 +21,12 @@ public class Rectangle extends Figure implements Countable {
     }
 
     @Override
-    public void countArea () {
+    public void countArea() {
         System.out.println("Площадь " + getName() + " = " + getArea());
     }
 
     @Override
-    public void countPerimeter () {
-        System.out.println("Периметер " + getName() + " = " + getPerimeter()) ;
+    public void countPerimeter() {
+        System.out.println("Периметер " + getName() + " = " + getPerimeter());
     }
 }

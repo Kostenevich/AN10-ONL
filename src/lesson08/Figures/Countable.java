@@ -1,10 +1,11 @@
 package lesson08.Figures;
 
 /**
- Интерфейс для посчета площади фигуры
+ * Интерфейс для посчета площади фигуры
  */
 
 public interface Countable {
-    void countArea ();
+    void countArea();
+
     void countPerimeter();
 }
