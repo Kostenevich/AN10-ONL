@@ -19,6 +19,7 @@ package lesson10.HomeworkPartOneString;
 
 public class PartOneStringApp {
     public static void main(String[] args) throws UserInputException {
+
         System.out.println("Задание №1");
         String stringTask1 = "Один два три семь";
         TextSearching.findShortestWord(stringTask1);

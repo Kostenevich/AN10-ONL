@@ -1,7 +1,7 @@
 package lesson10.HomeworkPartOne.UtilString;
 
 /**
- * Статичная переменная нужного формата документа
+ * Статичная переменная, содержит нужный формат
  */
 
 public class StringVariable {

@@ -1,7 +1,7 @@
 package lesson10.HomeworkPartOne.CustomExceptions;
 
 /**
- * Исключение для проверки начинается ли строка с "555"
+ * Исключение для проверки начала строки "555"
  */
 
 public class StringEndWithException extends Exception {

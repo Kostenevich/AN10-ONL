@@ -1,6 +1,10 @@
 package lesson10.HomeworkPartTwo.CredentialException;
 
-public class WrongLoginException extends Exception{
+/**
+ * Исключения для неверного логина
+ */
+
+public class WrongLoginException extends Exception {
 
     public WrongLoginException(String message) {
         super(message);

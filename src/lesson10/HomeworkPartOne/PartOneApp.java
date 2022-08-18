@@ -35,10 +35,6 @@ public class PartOneApp {
         String s1 = "1111-ABC-5555-fDf-1a2b";
         String s2 = "111-ABC-5555-fDf-112b";
 
-        /**
-         Обернули метод для проверки формата строки в блок try-catch
-         */
-
         try {
             StringModification.checkString(s2);
         } catch (StringCheckException e) {
@@ -51,27 +47,17 @@ public class PartOneApp {
         StringModification.printOnlyLettersLow(s1);
         StringModification.printOnlyLettersUpper(s1);
 
-        /**
-         Обернули метод для нахождения последовательности в блок try-catch
-         */
-
         try {
             StringModification.checkOnSequenceAbc(s1);
         } catch (StringContentException e) {
             System.out.println(e.getMessage());
         }
-        /**
-         Обернули метод для проверки начала строки в блок try-catch
-         */
 
         try {
             StringModification.checkOnStartWithTripleFive(s1);
         } catch (StringStartWithException e) {
             System.out.println(e.getMessage());
         }
-        /**
-         Обернули метод для проверки конца строки в блок try-catch
-         */
 
         try {
             StringModification.checkOnEndWithTripleFive(s1);

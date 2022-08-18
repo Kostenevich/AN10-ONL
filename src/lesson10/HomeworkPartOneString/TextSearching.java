@@ -61,7 +61,7 @@ public class TextSearching {
     }
 
     /**
-     * Метод для проверки, является ли слово палиндромом
+     * Метод проверяет, является ли слово палиндромом
      */
 
     public static void checkPalindrome(String str) throws UserInputException {
@@ -93,7 +93,7 @@ public class TextSearching {
     }
 
     /**
-     * Метод для дублирования символов
+     * Метод дублирования символов
      */
 
     public static void duplicateSymbols(String str) {

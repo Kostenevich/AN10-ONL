@@ -24,10 +24,13 @@ public class CredApp {
 
         Credential.checkCredential(login, password, confirmPassword);
         System.out.println("------------------------");
+
         Credential.checkCredential(login1, password1, confirmPassword1);
         System.out.println("------------------------");
+
         Credential.checkCredential(login2, password2, confirmPassword2);
         System.out.println("------------------------");
+
         Credential.checkCredential(login3, password3, confirmPassword3);
 
     }

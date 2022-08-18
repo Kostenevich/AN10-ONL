@@ -17,7 +17,7 @@ public class StringModification {
     }
 
     /**
-     * Метод для вывода на экран номер документа, но блоки из трех букв заменить на *** (каждая буква заменятся на *)
+     * Метод для вывода на экран номер документа, но блоки из трех букв заменить на ***
      */
     public static void printWithCovertLetters(String string) {
         System.out.println(string.replaceAll("[a-zA-Z]{3}", "***"));
